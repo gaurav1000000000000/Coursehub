@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selling Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Additional Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+
+                </div>
+               
+                <!--<div class="top-link">
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white fw-bold">CourseHub<span class="text-secondary"> </span></h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+       <!-- Carousel Start -->
+<div class="container-fluid px-0">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_1280.jpg" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
+                        <h1 class="text-white display-1 mb-4 animated fadeInRight">An Innovative IT Solutions Agency</h1>
+                        <p class="mb-4 text-white fs-5 animated fadeInDown">We provide cutting-edge technology solutions tailored to your business needs. Our expert team ensures the highest quality of service and customer satisfaction.</p>
+                        <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
+                        <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel-2.jpg" class="img-fluid" alt="Second slide">
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
+                        <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality Digital Services You Really Need!</h1>
+                        <p class="mb-4 text-white fs-5 animated fadeInDown">Our digital services range from web development to digital marketing, all designed to enhance your online presence and drive growth.</p>
+                        <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
+                        <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+        <!-- Fact Start -->
+        <div class="container-fluid bg-secondary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">99</h1>
+                            <h5 class="text-white mt-1">Successful Projects Completed</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">25</h1>
+                            <h5 class="text-white mt-1">Years of Industry Experience</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">120</h1>
+                            <h5 class="text-white mt-1">Clients Who Trust Our Services</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">5</h1>
+                            <h5 class="text-white mt-1">Star Ratings from Happy Clients</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact End -->
+
+             <!-- About Start -->
+             <style>
+                .bg-custom-light-grey {
+                    background-color: #151515; /* Custom Light Grey */
+                }
+            
+                h5.text-primary {
+                    background-color: black;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    color: white;
+                    border-radius: 5px;
+                }
+            </style>
+            
+            <div class="container-fluid py-5 my-5 bg-light bg-custom-light-grey">
+                <div class="container pt-5">
+                    <div class="row g-5">
+                        <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                            <div class="h-100 position-relative">
+                                <img src="https://engagedly.com/wp-content/uploads/2023/10/Training-and-Development.webp" class="img-fluid w-75 rounded" alt="About Us Image" style="margin-bottom: 25%;">
+                                <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                                    <img src="https://cdn.corporatefinanceinstitute.com/assets/team-training.jpeg" class="img-fluid w-100 rounded" alt="About Our Team">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                            <h5 class="text-primary">About Us</h5>
+                            <h1 class="mb-4">CourseHub Training</h1>
+                            <p>CourseHub An institute provides structured training programs to help individuals gain knowledge and skills in various fields, such as technology, business, and design. Training sessions include hands-on learning, expert guidance, and industry-relevant curriculum to prepare students for real-world challenges.</p>
+                            <p class="mb-4">With years of experience in the industry, we understand the unique challenges that businesses face. Our tailored solutions are designed to meet your specific needs, whether you are a startup looking to establish an online presence or an established company aiming to enhance your digital strategy.</p>
+                            <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+<!-- About End -->
+
+ <!-- Services Start -->
+ <div class="container-fluid services py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Our Services</h5>
+            <h1>Services Built Specifically For Your Business</h1>
+        </div>
+        <div class="row g-5 services-inner">
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-code fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Web Design</h4>
+                            <p class="mb-4">We create visually stunning and user-friendly website designs that reflect your brand's identity and engage your audience effectively.</p>
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <p class="mb-0 text-primary h5 me-3">₹1500</p>
+                                <a href="web-design.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Web Development</h4>
+                            <p class="mb-4">Our development team builds robust and scalable web applications tailored to your business needs, ensuring optimal performance and security.</p>
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <p class="mb-0 text-primary h5 me-3">₹450</p>
+                                <a href="web-development.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">UI/UX Design</h4>
+                            <p class="mb-4">We focus on creating intuitive user interfaces and experiences that enhance customer satisfaction and drive conversions.</p>
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <p class="mb-0 text-primary h5 me-3">₹1980</p>
+                                <a href="ui-ux-design.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Web Security</h4>
+                            <p class="mb-4">We prioritize your online safety by implementing advanced security measures to protect your website and user data from threats.</p>
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <p class="mb-0 text-primary h5 me-3">₹2100</p>
+                                <a href="web-security.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Digital Marketing</h4>
+                            <p class="mb-4">Our digital marketing strategies leverage SEO, social media, and content marketing to boost your online visibility and attract more customers.</p>
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <p class="mb-0 text-primary h5 me-3">₹1200</p>
+                                <a href="digital-marketing.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Programming</h4>
+                            <p class="mb-4">We provide high-quality programming services that cater to various programming languages and frameworks to develop efficient software solutions.</p>
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <p class="mb-0 text-primary h5 me-3">₹1700</p>
+                                <a href="programming.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+    
+    
+
+    <style>
+    .bg-custom-light-grey {
+        background-color: #0f0e0e; /* Custom Light Grey */
+    }
+</style>
+
+<!-- Course Section -->
+<div class="container mt-4 bg-light bg-custom-light-grey">
+    <h2 class="text-center mb-4">Available Courses</h2>
+    <div class="row g-3">
+
+        <!-- UI/UX Design -->
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="images/ui.avif" class="card-img-top" alt="UI/UX Design">
+                <div class="card-body text-center">
+                    <h5 class="card-title">UI/UX Design</h5>
+                    <p class="card-text">Price: ₹4,999</p>
+                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
+                    <p class="course-description">UI/UX Design focuses on user experience and interface design principles to enhance usability.</p>
+                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('UI/UX Design', 4999)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="images/cybersecurity.jpg" class="card-img-top" alt="Cybersecurity">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cybersecurity</h5>
+                    <p class="card-text">Price: ₹5,999</p>
+                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
+                    <p class="course-description">Cybersecurity course teaches how to protect systems and data from cyber threats.</p>
+                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Cybersecurity', 5999)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blockchain -->
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="images/blockchain.jpg" class="card-img-top" alt="Blockchain">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Blockchain</h5>
+                    <p class="card-text">Price: ₹6,499</p>
+                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
+                    <p class="course-description">Blockchain technology provides secure decentralized solutions for various applications.</p>
+                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Blockchain', 6499)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ethical Hacking -->
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="images/ethical hacking.jpg" class="card-img-top" alt="Ethical Hacking">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ethical Hacking</h5>
+                    <p class="card-text">Price: ₹7,999</p>
+                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
+                    <p class="course-description">Ethical Hacking helps in understanding security loopholes and ethical penetration testing.</p>
+                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Ethical Hacking', 7999)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Digital Marketing -->
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="images/Dm.jpg" class="card-img-top" alt="Digital Marketing">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Digital Marketing</h5>
+                    <p class="card-text">Price: ₹5,499</p>
+                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
+                    <p class="course-description">Digital Marketing teaches SEO, social media marketing, and online branding strategies.</p>
+                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Digital Marketing', 5499)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Automation Anywhere -->
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="images/rpa.jpg" class="card-img-top" alt="Automation Anywhere">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Automation Anywhere</h5>
+                    <p class="card-text">Price: ₹6,999</p>
+                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
+                    <p class="course-description">Automation Anywhere helps automate repetitive tasks using RPA (Robotic Process Automation).</p>
+                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Automation Anywhere', 6999)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function redirectToPayment(courseName, price) {
+        window.location.href = `payment.html?course=${encodeURIComponent(courseName)}&price=${price}`;
+    }
+</script>
+
+
+  <!-- Project Start -->
+  <div class="container-fluid project py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Our Projects</h5>
+            <h1>Our Recently Completed Projects</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="https://t4.ftcdn.net/jpg/02/83/46/33/360_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg" class="img-fluid w-100 rounded" alt="Web Design Project">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Web Design</h4>
+                                <p class="m-0 text-white">An innovative web design project focused on enhancing user engagement and brand identity through modern aesthetics.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="https://www.shutterstock.com/image-photo/glowing-digital-lock-surrounded-by-600nw-2517566697.jpg" class="img-fluid w-100 rounded" alt="Cyber Security Project">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Cyber Security</h4>
+                                <p class="m-0 text-white">Developed a robust cyber security framework for a client, ensuring data protection and risk management against threats.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="https://img.lovepik.com/photo/50056/5689.jpg_wh860.jpg" class="img-fluid w-100 rounded" alt="Mobile Information Project">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Mobile Information</h4>
+                                <p class="m-0 text-white">Created a comprehensive mobile information platform showcasing upcoming smartphones and features.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg" class="img-fluid w-100 rounded" alt="Web Development Project">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Web Development</h4>
+                                <p class="m-0 text-white">Executed full-stack web development for a dynamic e-commerce platform, improving user experience and transaction speed.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="https://media.istockphoto.com/id/959020654/photo/digital-marketing-new-startup-project-millennials-business-team-hands-at-work-with-financial.jpg?s=612x612&w=0&k=20&c=wwkyGtXxNKuew7FkH3DeJ5DCdqeM6kAhzj1II6yxQJI=" class="img-fluid w-100 rounded" alt="Digital Marketing Project">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Digital Marketing</h4>
+                                <p class="m-0 text-white">Developed a tailored digital marketing strategy, utilizing SEO and social media campaigns to drive brand awareness.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8yMORUuAtCEmW-nOhb9095BwPaTNJ5L0Bw&s" class="img-fluid w-100 rounded" alt="Keyword Research Project">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Keyword Research</h4>
+                                <p class="m-0 text-white">Conducted in-depth keyword research and analysis to enhance SEO strategy and content optimization for clients.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Team Start -->
+ 
+ <head>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- jQuery and Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+<div class="container-fluid py-5 mb-5 team">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Our Team</h5>
+            <h1>Meet Our Expert Team</h1>
+            <p class="text-muted">We are a group of passionate professionals committed to delivering the best results for our clients.</p>
+        </div>
+        <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
+            <div class="rounded team-item">
+                <div class="team-content">
+                    <div class="team-img-icon">
+                        <div class="team-img rounded-circle">
+                            <img src="https://media.istockphoto.com/id/1139938843/photo/programmer-controlling-the-statistics-of-the-site.jpg?s=612x612&w=0&k=20&c=XsCr4nWhkhxPtnSHxvk5tsV-24az5K8PDvS-SMyYWbQ=" class="img-fluid w-100 rounded-circle" alt="Team Member 1">
+                        </div>
+                        <div class="team-name text-center py-3">
+                            <h4 class="">Rahul Sharma</h4>
+                            <p class="m-0">Lead Developer</p>
+                            <p class="text-muted">Rahul is a skilled developer with over 5 years of experience in web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded team-item">
+                <div class="team-content">
+                    <div class="team-img-icon">
+                        <div class="team-img rounded-circle">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4m61geJg6Yvs6m0sNG9ioejnGrMnb-da45g&s" class="img-fluid w-100 rounded-circle" alt="Team Member 2">
+                        </div>
+                        <div class="team-name text-center py-3">
+                            <h4 class="">Priya Mehta</h4>
+                            <p class="m-0">Marketing Specialist</p>
+                            <p class="text-muted">With a keen eye for detail, Priya drives our marketing strategies to new heights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded team-item">
+                <div class="team-content">
+                    <div class="team-img-icon">
+                        <div class="team-img rounded-circle">
+                            <img src="https://img.freepik.com/premium-photo/happy-excited-indian-software-developer-sitting-office-desk-turning-back-waving-camera_274689-19237.jpg" class="img-fluid w-100 rounded-circle" alt="Team Member 3">
+                        </div>
+                        <div class="team-name text-center py-3">
+                            <h4 class="">Amit Singh</h4>
+                            <p class="m-0">UI/UX Designer</p>
+                            <p class="text-muted">Amit creates intuitive and engaging designs, ensuring a seamless user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded team-item">
+                <div class="team-content">
+                    <div class="team-img-icon">
+                        <div class="team-img rounded-circle">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNZTVJ20KUi5SKBFaWiaiUiqO4jAjrps-og&s" class="img-fluid w-100 rounded-circle" alt="Team Member 4">
+                        </div>
+                        <div class="team-name text-center py-3">
+                            <h4 class="">Sneha Verma</h4>
+                            <p class="m-0">Project Manager</p>
+                            <p class="text-muted">Sneha ensures that all projects are completed on time and exceed client expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $(".team-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: { items: 1 },
+                600: { items: 2 },
+                1000: { items: 3 }
+            }
+        });
+    });
+</script>
+
+<!-- Team End -->
+ 
+<!-- Project End -->
+<div class="container-fluid testimonial py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Our Testimonial</h5>
+            <h1>Our Clients Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+            <div class="testimonial-item border p-4">
+                <div class="d-flex align-items-center">
+                    <div class="">
+                        <img src="img/testimonial-1.jpg" alt="Client 1">
+                    </div>
+                    <div class="ms-4">
+                        <h4 class="text-secondary">John Doe</h4>
+                        <p class="m-0 pb-3">Web Developer</p>
+                        <div class="d-flex pe-5">
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top mt-4 pt-3">
+                    <p class="mb-0">The team at PixanoStudio provided exceptional service and helped me elevate my online presence. Their attention to detail and creativity exceeded my expectations!</p>
+                </div>
+            </div>
+            <div class="testimonial-item border p-4">
+                <div class="d-flex align-items-center">
+                    <div class="">
+                        <img src="img/testimonial-2.jpg" alt="Client 2">
+                    </div>
+                    <div class="ms-4">
+                        <h4 class="text-secondary">Jane Smith</h4>
+                        <p class="m-0 pb-3">Digital Marketer</p>
+                        <div class="d-flex pe-5">
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top mt-4 pt-3">
+                    <p class="mb-0">Working with this team has been a game-changer for my business. They understand digital marketing inside and out and delivered results I never thought possible.</p>
+                </div>
+            </div>
+            <div class="testimonial-item border p-4">
+                <div class="d-flex align-items-center">
+                    <div class="">
+                        <img src="img/testimonial-3.jpg" alt="Client 3">
+                    </div>
+                    <div class="ms-4">
+                        <h4 class="text-secondary">Michael Johnson</h4>
+                        <p class="m-0 pb-3">Entrepreneur</p>
+                        <div class="d-flex pe-5">
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top mt-4 pt-3">
+                    <p class="mb-0">I was amazed by the quality of service provided. The team truly cares about their clients and goes above and beyond to ensure satisfaction. Highly recommended!</p>
+                </div>
+            </div>
+            <div class="testimonial-item border p-4">
+                <div class="d-flex align-items-center">
+                    <div class="">
+                        <img src="img/testimonial-4.jpg" alt="Client 4">
+                    </div>
+                    <div class="ms-4">
+                        <h4 class="text-secondary">Emily Davis</h4>
+                        <p class="m-0 pb-3">Graphic Designer</p>
+                        <div class="d-flex pe-5">
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                            <i class="fas fa-star me-1 text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top mt-4 pt-3">
+                    <p class="mb-0">The professionalism and expertise of the team made the entire process smooth and enjoyable. I'm thrilled with the results and will definitely work with them again!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   
+
+
+
+<!-- Contact Section -->
+    <!-- Footer -->
+    <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <h1 class="text-white fw-bold d-block">CourseHub<span class="text-secondary"></span></h1>
+                    </a>
+                    <p class="mt-4 text-light">At CourseHub, we provide innovative solutions tailored to meet your technology needs. Our commitment to excellence ensures that we deliver quality products and services that enhance your digital experience.</p>
+                    <!--<div class="d-flex FUN2SH-link">-->
+                        <!-- Social Media Links -->
+                        <!--<a href="https://facebook.com" class="btn-light nav-fill btn btn-square rounded-circle me-2" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f text-primary"></i>
+                        </a>
+                        <a href="https://twitter.com" class="btn-light nav-fill btn btn-square rounded-circle me-2" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter text-primary"></i>
+                        </a>
+                        <a href="https://instagram.com" class="btn-light nav-fill btn btn-square rounded-circle me-2" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram text-primary"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="btn-light nav-fill btn btn-square rounded-circle me-0" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in text-primary"></i>
+                        </a>
+                    </div>-->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Short Links</a>
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                        <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                        <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                        <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
+                        <a href="blog.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Help Links</a>
+                    <div class="mt-4 d-flex flex-column help-link">
+                        <a href="terms-of-use.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms of Use</a>
+                        <a href="privacy-policy.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                        <a href="helpcenter.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Help Center</a>
+                        <a href="faq.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FAQs</a>
+                        <a href="refund-cancellation.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Cancellation And Refund</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Contact Us</a>
+                    <div class="text-white mt-4 d-flex flex-column contact-link">
+                        <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Mira Road (East), Mira-bhayandar, Thane, 401107</a>
+                        <!--<a href="tel:+1234567890" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>+1 (234) 567-890</a>-->
+                        <a href="mailto:coursehub@gmail.com.in" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>coursehub@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>FUN2SH Enterprises</a>, All rights reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <!--<span class="text-light">Designed By <a href="https://htmlcodex.com" class="text-secondary">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Add this before the closing </body> tag -->
+<script>
+    function toggleDescription(button) {
+        var description = button.parentElement.querySelector(".course-description");
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+            button.textContent = "Read Less";
+        } else {
+            description.style.display = "none";
+            button.textContent = "Read More";
+        }
+    }
+</script>
+</body>
+</html>
+
+
+</body>
+</html>

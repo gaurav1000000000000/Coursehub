@@ -1,0 +1,51 @@
+body {
+    background-color: #007bff; /* Blue background */
+}
+
+h2 {
+    font-weight: bold;
+    color: #ffffff; /* White color for better contrast */
+}
+
+.course-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background-color: #ffffff; /* White background for course cards */
+    border-radius: 10px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #28a745;
+}
+
+.btn-primary {
+    background-color: #0ed53d; /* White button */
+    color: #007bff; /* Blue text */
+    border: 2px solid #007bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
