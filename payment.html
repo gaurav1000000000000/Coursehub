@@ -1,196 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout - CourseHub Training and institute</title>
+        
+    </head>
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+       
+
+        
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+    <!--<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>OM Technologies - UPI Checkout</title>-->
     <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .payment-container {
-            max-width: 500px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-        }
-        .btn-pay {
-            width: 100%;
-        }
-        .hidden {
-            display: none;
-        }
-        .qr-code {
-            text-align: center;
-            margin-top: 15px;
-        }
-        .qr-code img {
-            width: 150px;
-            height: 150px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
+       /* body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }*/
+        .btn { display: block; padding: 15px; margin: 10px 0; font-size: 18px; text-decoration: none; color: white; border-radius: 5px; }
+        .gpay { background-color: #4285F4; }
+        .phonepe { background-color: #672AB6; }
+        .paytm { background-color: #002970; }
+        footer { margin-top: 20px; font-size: 14px; color: #666; }
     </style>
+
+    
 </head>
-<body>
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add if you have a CSS file -->
-</head>
-<body>
+<!-- Topbar Start -->
 
-    <h2>Payment Page</h2>
-    <p>Course: <span id="course-name"></span></p>
-    <p>Price: <span id="course-price"></span></p>
-    <button class="btn btn-success">Proceed to Pay</button>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Get URL parameters
-            const urlParams = new URLSearchParams(window.location.search);
-            const courseName = urlParams.get("course");
-            const price = urlParams.get("price");
-
-            // Update the page with course details
-            if (courseName && price) {
-                document.getElementById("course-name").textContent = courseName;
-                document.getElementById("course-price").textContent = `₹${price}`;
-            }
-        });
-    </script>
-
-</body>
-</html>
-
-
-<div class="container">
-    <div class="payment-container">
-        <h2 class="text-center">Payment Details</h2>
-        <p><strong>Course:</strong> <span id="courseName"></span></p>
-        <p><strong>Price:</strong> ₹<span id="coursePrice"></span></p>
-
-        <form id="paymentForm">
-            <div class="mb-3">
-                <label for="fullName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="fullName" required>
+    <div class="container">
+        <div class="d-flex justify-content-between topbar">
+            
+            
+                <!--<a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>-->
+                <!--<a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                <a href="https://www.instagram.com/code_with_shubh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                <a href="https://www.linkedin.com/in/ohom-dubey-23055917b/" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>-->
             </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
 
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
+<!-- Navbar Start -->
+<div class="container-fluid bg-primary">
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg py-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-white fw-bold"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR38yMTRJHw5M_ehPnZvz65_48uMKbI5qV7qQ&s" height="50">coursehub<span class="text-secondary"></span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
 
-            <div class="mb-3">
-                <label class="form-label">Select Payment Method</label>
-                <select class="form-select" id="paymentMethod" onchange="togglePaymentMethod()">
-                    <option value="card">Card Payment</option>
-                    <option value="upi">UPI Payment</option>
-                </select>
-            </div>
-
-            <!-- Card Payment Section -->
-            <div id="cardPayment">
-                <div class="mb-3">
-                    <label for="cardNumber" class="form-label">Card Number</label>
-                    <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="expiryDate" class="form-label">Expiry Date</label>
-                    <input type="month" class="form-control" id="expiryDate" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="cvv" class="form-label">CVV</label>
-                    <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                    <!-- Dynamic course links with prices -->
+                    <!--<a href="checkout.html?course=UI/UX%20Design&price=199" class="nav-item nav-link">UI/UX Design</a>
+                    <a href="checkout.html?course=Cybersecurity&price=299" class="nav-item nav-link">Cybersecurity</a>
+                    <a href="checkout.html?course=Blockchain&price=399" class="nav-item nav-link">Blockchain</a>
+                    <a href="checkout.html?course=Ethical%20Hacking&price=249" class="nav-item nav-link">Ethical Hacking</a>>-->
                 </div>
             </div>
-
-            <!-- UPI Payment Section (Initially Hidden) -->
-            <div id="upiPayment" class="hidden">
-                <div class="mb-3">
-                    <label for="upiId" class="form-label">UPI ID</label>
-                    <input type="text" class="form-control" id="upiId" placeholder="example@upi">
-                </div>
-                <div class="qr-code">
-                    <p>Scan the QR Code to Pay via GPay</p>
-                    <img src="images/gpay.jpg" alt="GPay QR Code">
-                </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-pay">Proceed to Checkout</button>
-        </form>
+        </nav>
     </div>
 </div>
 
-<script>
-    // Fetch course details from URL parameters
-    const urlParams = new URLSearchParams(window.location.search);
-    const courseName = urlParams.get('course');
-    const coursePrice = urlParams.get('price');
 
-    // Display course details
-    document.getElementById("courseName").innerText = courseName;
-    document.getElementById("coursePrice").innerText = coursePrice;
+<!-- Navbar End -->
 
-    // Toggle payment method visibility
-    function togglePaymentMethod() {
-        const paymentMethod = document.getElementById("paymentMethod").value;
-        const cardPayment = document.getElementById("cardPayment");
-        const upiPayment = document.getElementById("upiPayment");
+<body>
+    <!--<header>
+        <h1>OM Technologies</h1>
+        <p>Secure UPI Payment</p>
+    </header>-->
 
-        if (paymentMethod === "card") {
-            cardPayment.classList.remove("hidden");
-            upiPayment.classList.add("hidden");
-            document.getElementById("cardNumber").required = true;
-            document.getElementById("expiryDate").required = true;
-            document.getElementById("cvv").required = true;
-            document.getElementById("upiId").required = false;
-        } else {
-            cardPayment.classList.add("hidden");
-            upiPayment.classList.remove("hidden");
-            document.getElementById("cardNumber").required = false;
-            document.getElementById("expiryDate").required = false;
-            document.getElementById("cvv").required = false;
-            document.getElementById("upiId").required = true;
-        }
-    }
+    <h2>Checkout</h2>
+    <p>Amount: <strong id="price"></strong></p>
+    <p>Course: <strong id="course"></strong></p>
 
-    // Handle form submission
-    document.getElementById("paymentForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        const paymentMethod = document.getElementById("paymentMethod").value;
-        if (paymentMethod === "card") {
-            alert("Payment Successful via Card for " + courseName + "! Thank you.");
-        } else {
-            alert("Payment Successful via UPI for " + courseName + "! Thank you.");
-        }
-        window.location.href = "success.html"; // Redirect to success page after payment
-    });
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get URL parameters
+    <div class="container">
+        <h2>Complete Your Payment</h2>
+    
+        <!-- Google Pay Button -->
+        <a id="gpay" class="btn gpay" href="https://payments.google.com/gp/w/home/paymentmethods" target="_blank">Pay with Google Pay</a>
+    
+        <!-- PhonePe Button -->
+        <a id="phonepe" class="btn phonepe" href="https://www.phonepe.com/" target="_blank">Pay with PhonePe</a>
+    
+        <!-- Paytm Button -->
+        <a id="paytm" class="btn paytm" href="https://paytm.com/" target="_blank">Pay with Paytm</a>
+    </div>
+    
+
+    <script>
+        
+        // Get amount from URL parameters
+        // const storedAmount = localStorage.getItem('course');
+        // // const amount = storedAmount ? storedAmount : "0";
+        // const amount = localStorage.getItem('amount');
+        // const result = document.getElementById("amount").textContent = amount;
         const urlParams = new URLSearchParams(window.location.search);
-        const courseName = urlParams.get("course");
-        const price = urlParams.get("price");
-    
-        // Update the page with course details
-        if (courseName && price) {
-            document.getElementById("course-name").textContent = courseName;
-            document.getElementById("course-price").textContent = `₹${price}`;
-        }
-    });
-    </script>
-    
+            const param1 = urlParams.get('param1');
+            const param2 = urlParams.get('param2');
+            
+            document.getElementById("course").innerText = param1;
+            document.getElementById("price").innerText = param2;
 
-</body>
+        // Define UPI ID
+        const upiId = "omkarnathdubey127-2@okhdfcbank"; 
+
+        // Generate UPI payment links dynamically
+        const upiLink = `upi://pay?pa=${upiId}&pn=OM%20Technologies&mc=0000&tid=${Date.now()}&tr=TXN${Date.now()}&tn=Payment&am=${amount}&cu=INR`;
+
+        // Update payment links
+        document.getElementById("gpay").href = upiLink;
+        document.getElementById("phonepe").href = upiLink;
+        document.getElementById("paytm").href = upiLink;
+
+        
+    </script>
+
+    <!-- Footer Start -->
+<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+    <div class="container pt-5 pb-4">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <a href="index.html">
+                    <h1 class="text-white fw-bold d-block">CourseHub<span class="text-secondary"></span></h1>
+                </a>
+                <p class="mt-4 text-light">At coursehub, we provide innovative solutions tailored to meet your technology needs. Our commitment to excellence ensures that we deliver quality products and services that enhance your digital experience.</p>
+                <div class="d-flex Om Technologies-link">
+                    <!-- Social Media Links -->
+                    <!--<a href="https://facebook.com" class="btn-light nav-fill btn btn-square rounded-circle me-2" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f text-primary"></i>
+                    </a>
+                    <a href="https://twitter.com" class="btn-light nav-fill btn btn-square rounded-circle me-2" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter text-primary"></i> 
+                    </a>
+                    <a href="https://www.instagram.com/code_with_shubh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn-light nav-fill btn btn-square rounded-circle me-2" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram text-primary"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ohom-dubey-23055917b/" class="btn-light nav-fill btn btn-square rounded-circle me-0" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in text-primary"></i>-->
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="#" class="h3 text-secondary">Short Links</a>
+                <div class="mt-4 d-flex flex-column short-link">
+                    <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                    <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                    <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                    <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
+                    <a href="blog.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <a href="#" class="h3 text-secondary">Help Links</a>
+                <div class="mt-4 d-flex flex-column help-link">
+                    <a href="terms-of-use.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms of Use</a>
+                    <a href="privacy-policy.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                    <a href="helpcenter.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Help Center</a>
+                    <a href="faq.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FAQs</a>
+                    <a href="refund-cancellation.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Cancellation And Refund</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <a href="#" class="h3 text-secondary">Contact Us</a>
+                <div class="text-white mt-4 d-flex flex-column contact-link">
+                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Goregaon (E), Mumbai, Maharashtra, 400065</a>
+                    <a href="tel:+1234567890" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>+91 9892018171</a>
+                    <a href="mailto:dubey@ohomtech.online" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>coursehub@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light mt-5 mb-4">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Om Technologiess</a>, All rights reserved.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                <!--<span class="text-light">Designed By <a href="https://htmlcodex.com" class="text-secondary">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
