@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blockchain Technology - CourseHub Training and Institute</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Blockchain Technology Course" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white fw-bold"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR38yMTRJHw5M_ehPnZvz65_48uMKbI5qV7qQ&s" height="40">CourseHub<span class="text-secondary"></span></h1><span class="text-secondary"> </span></h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4">Blockchain Technology</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blockchain Technology</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Blockchain Technology Section Start -->
+    <div class="container my-5">
+        <h2 class="mb-4">Our Blockchain Technology Course</h2>
+        <p>At CourseHub Training and Institute, we provide an in-depth understanding of Blockchain technology and its applications in the digital world.</p>
+
+        <h3 class="mt-4">Our Services Include:</h3>
+        <ul>
+            <li><strong>Blockchain Fundamentals:</strong> Understanding the core concepts of Blockchain technology.</li>
+            <li><strong>Smart Contracts:</strong> Learning how to create and deploy smart contracts.</li>
+            <li><strong>Cryptocurrency:</strong> Exploring the role of cryptocurrencies like Bitcoin and Ethereum in Blockchain.</li>
+            <li><strong>Blockchain Security:</strong> Learning how Blockchain enhances security and transparency.</li>
+            <li><strong>Decentralized Applications:</strong> Understanding the development of decentralized apps (DApps) using Blockchain.</li>
+        </ul>
+
+        <h3 class="mt-4">Why Choose Us?</h3>
+        <ul>
+            <li>Expert instructors with real-world experience in Blockchain development.</li>
+            <li>Hands-on projects to help you implement Blockchain solutions.</li>
+            <li>Comprehensive curriculum covering all aspects of Blockchain technology.</li>
+            <li>Focus on career development with support in job placements.</li>
+        </ul>
+
+        <h3 class="mt-4">Get Started Today!</h3>
+        <p>Contact us to learn more about our Blockchain Technology course and how we can help you build a career in this rapidly growing field.</p>
+
+        <!-- Buy Now Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-primary buy-btn" onclick="redirectTocheckout('Blockchain Technology', 2499)">Buy Now</button>
+        </div>
+    </div>
+    <!-- Blockchain Technology Section End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark">
+        <div class="container pt-5 pb-4 text-white text-center">
+            <p>© 2025 CourseHub Training and Institute. All rights reserved.</p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Files -->
+    <script>
+        function redirectTocheckout(courseName, price) {
+            // Redirect to payment.html with course details in URL
+            window.location.href = `checkout.html?course=${encodeURIComponent(courseName)}&price=${price}`;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
