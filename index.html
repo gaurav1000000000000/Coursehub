@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,31 +23,14 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
-        <div class="container">
-            <div class="d-flex justify-content-between topbar">
-                <div class="top-info">
-
-                </div>
-               
-                <!--<div class="top-link">
-                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
-                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
-                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
-                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
-                </div>-->
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
+  
+    
     <!-- Navbar -->
     <div class="container-fluid bg-primary">
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white fw-bold">CourseHub<span class="text-secondary"> </span></h1>
+                    <h1 class="text-white fw-bold"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR38yMTRJHw5M_ehPnZvz65_48uMKbI5qV7qQ&s" height="40">CourseHub<span class="text-secondary"> </span></h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -59,7 +39,7 @@
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link ">Services</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -155,10 +135,10 @@
                 }
             
                 h5.text-primary {
-                    background-color: black;
+                    background-color: rgb(248, 247, 247);
                     display: inline-block;
                     padding: 5px 10px;
-                    color: white;
+                    color: black;
                     border-radius: 5px;
                 }
             </style>
@@ -189,7 +169,7 @@
 <!-- About End -->
 
  <!-- Services Start -->
- <div class="container-fluid services py-5 mb-5">
+<!-- <div class="container-fluid services py-5 mb-5">
     <div class="container">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
             <h5 class="text-primary">Our Services</h5>
@@ -288,7 +268,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Services End -->
     
     
@@ -303,97 +283,93 @@
 <div class="container mt-4 bg-light bg-custom-light-grey">
     <h2 class="text-center mb-4">Available Courses</h2>
     <div class="row g-3">
-
-        <!-- UI/UX Design -->
-        <div class="col-md-4">
-            <div class="card course-card">
-                <img src="images/ui.avif" class="card-img-top" alt="UI/UX Design">
-                <div class="card-body text-center">
-                    <h5 class="card-title">UI/UX Design</h5>
-                    <p class="card-text">Price: ₹4,999</p>
-                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
-                    <p class="course-description">UI/UX Design focuses on user experience and interface design principles to enhance usability.</p>
-                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('UI/UX Design', 4999)">Buy Now</button>
+        
+                <!-- UI/UX Design -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/ui.avif" class="card-img-top" alt="UI/UX Design">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Price: ₹4,999</p>
+                           <button class="btn btn-primary buy-btn" onclick="redirectToPayment('UI/UX Design', '4999')">Buy Now</button>
+                            <a href="ui-ux-design.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
                 </div>
+        
+                <!-- Cybersecurity -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/cybersecurity.jpg" class="card-img-top" alt="Cybersecurity">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text">Price: ₹5,999</p>
+                            <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Cybersecurity', 5999)">Buy Now</button>
+                            <a href="cyber-security.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Blockchain -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/blockchain.jpg" class="card-img-top" alt="Blockchain">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Blockchain</h5>
+                            <p class="card-text">Price: ₹6,499</p>
+                            <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Blockchain', 6499)">Buy Now</button>
+                            <a href="Blockchain.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Ethical Hacking -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/ethical hacking.jpg" class="card-img-top" alt="Ethical Hacking">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ethical Hacking</h5>
+                            <p class="card-text">Price: ₹7,999</p>
+                            <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Ethical Hacking', 7999)">Buy Now</button>
+                            <a href="Ethicalhacking.html" class="btn btn-primary">Read More</a>
+
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Digital Marketing -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/Dm.jpg" class="card-img-top" alt="Digital Marketing">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Digital Marketing</h5>
+                            <p class="card-text">Price: ₹5,499</p>
+                            <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Digital Marketing', 5499)">Buy Now</button>
+                            <a href="digital-marketing.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Automation Anywhere -->
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/rpa.jpg" class="card-img-top" alt="Automation Anywhere">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Automation Anywhere</h5>
+                            <p class="card-text">Price: ₹6,999</p>
+                            <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Automation Anywhere', 6999)">Buy Now</button>
+                            <a href="automation-anywhere.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+        
             </div>
         </div>
-
-        <!-- Cybersecurity -->
-        <div class="col-md-4">
-            <div class="card course-card">
-                <img src="images/cybersecurity.jpg" class="card-img-top" alt="Cybersecurity">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Cybersecurity</h5>
-                    <p class="card-text">Price: ₹5,999</p>
-                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
-                    <p class="course-description">Cybersecurity course teaches how to protect systems and data from cyber threats.</p>
-                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Cybersecurity', 5999)">Buy Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Blockchain -->
-        <div class="col-md-4">
-            <div class="card course-card">
-                <img src="images/blockchain.jpg" class="card-img-top" alt="Blockchain">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Blockchain</h5>
-                    <p class="card-text">Price: ₹6,499</p>
-                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
-                    <p class="course-description">Blockchain technology provides secure decentralized solutions for various applications.</p>
-                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Blockchain', 6499)">Buy Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Ethical Hacking -->
-        <div class="col-md-4">
-            <div class="card course-card">
-                <img src="images/ethical hacking.jpg" class="card-img-top" alt="Ethical Hacking">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Ethical Hacking</h5>
-                    <p class="card-text">Price: ₹7,999</p>
-                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
-                    <p class="course-description">Ethical Hacking helps in understanding security loopholes and ethical penetration testing.</p>
-                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Ethical Hacking', 7999)">Buy Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Digital Marketing -->
-        <div class="col-md-4">
-            <div class="card course-card">
-                <img src="images/Dm.jpg" class="card-img-top" alt="Digital Marketing">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Digital Marketing</h5>
-                    <p class="card-text">Price: ₹5,499</p>
-                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
-                    <p class="course-description">Digital Marketing teaches SEO, social media marketing, and online branding strategies.</p>
-                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Digital Marketing', 5499)">Buy Now</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Automation Anywhere -->
-        <div class="col-md-4">
-            <div class="card course-card">
-                <img src="images/rpa.jpg" class="card-img-top" alt="Automation Anywhere">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Automation Anywhere</h5>
-                    <p class="card-text">Price: ₹6,999</p>
-                    <button class="btn btn-info" onclick="toggleDescription(this)">Read More</button>
-                    <p class="course-description">Automation Anywhere helps automate repetitive tasks using RPA (Robotic Process Automation).</p>
-                    <button class="btn btn-primary buy-btn" onclick="redirectToPayment('Automation Anywhere', 6999)">Buy Now</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
+        
 
 <script>
-    function redirectToPayment(courseName, price) {
-        window.location.href = `payment.html?course=${encodeURIComponent(courseName)}&price=${price}`;
+    function redirectToPayment(course,price) {
+        window.location.href = `payment.html?param1=${encodeURIComponent(course)}&param2=${encodeURIComponent(price)}`;
     }
 </script>
 
