@@ -21,14 +21,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="payment.html">
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
+
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark py-2 d-none d-md-flex">
@@ -64,7 +61,7 @@
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Services</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -113,7 +110,10 @@
         <p>Contact us to learn more about our web security services and how we can protect your online presence.</p>
         
         <!-- Buy Now Button -->
-        <button class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
+        <div class="text-center mt-4">
+            <button class="btn btn-primary buy-btn" onclick="redirectToPayment('web-Design', 1999)">Buy Now</button>
+
+        </div>
     </div>
     <!-- Web Security Section End -->
 
@@ -242,6 +242,15 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            function redirectToPayment(course, amount) {
+    console.log('Course:', course, 'Amount:', amount);
+    // Redirect logic here, for example:
+    window.location.href = `/payment?course=${course}&amount=${amount}`;
+}
+
+        </script>
+        
 </body>
 
 </html>
