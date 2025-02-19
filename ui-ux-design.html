@@ -30,7 +30,7 @@
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white fw-bold">CourseHub</h1>
+                    <h1 class="text-white fw-bold"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR38yMTRJHw5M_ehPnZvz65_48uMKbI5qV7qQ&s" height="40">CourseHub<span class="text-secondary"></span></h1><span class="text-secondary"> </span></h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Services</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
 
         <!-- Buy Now Button (Moved Outside the Modal) -->
         <div class="text-center mt-4">
-            <button class="btn btn-primary buy-btn" onclick="redirectToPayment('UI/UX Design', 1999)">Buy Now</button>
+            <button class="btn btn-primary buy-btn" onclick="redirectTocheckout('UI/UX Design', 1999)">Buy Now</button>
         </div>
     </div>
     <!-- UI/UX Design Section End -->
@@ -104,9 +104,9 @@
 
     <!-- JavaScript Files -->
     <script>
-        function redirectToPayment(courseName, price) {
+        function redirectTocheckout(courseName, price) {
             // Redirect to payment.html with course details in URL
-            window.location.href = `payment.html?course=${encodeURIComponent(courseName)}&price=${price}`;
+            window.location.href = `checkout.html?course=${encodeURIComponent(courseName)}&price=${price}`;
         }
     </script>
 
